@@ -40,15 +40,3 @@ class CreateUserPollQuestionAnswerChoiceResponses < ActiveRecord::Migration[5.2]
     add_index :responses, :answer_choice_id
   end
 end
-
-# add_index :bubbles, :author_id, unique: true
-
-# #copied from a .sql file
-# CREATE TABLE questions (
-#   id INTEGER PRIMARY KEY,
-#   title TEXT NOT NULL,
-#   body TEXT NOT NULL,
-#   user_id INTEGER NOT NULL,
-
-#   FOREIGN KEY (user_id) REFERENCES users(id)
-# );
